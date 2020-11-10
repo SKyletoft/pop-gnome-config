@@ -1,0 +1,5 @@
+sudo echo "Updating..."
+sudo apt update && sudo apt upgrade && sudo apt autoremove
+flatpak update
+rustup update
+proton_updater.sh

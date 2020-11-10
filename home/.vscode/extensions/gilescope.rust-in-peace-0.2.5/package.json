@@ -1,0 +1,50 @@
+{
+	"name": "rust-in-peace",
+	"displayName": "Rust-in-peace Extension Pack",
+	"description": "An opiniated set of Visual Studio Code extensions for Rust",
+	"version": "0.2.5",
+	"publisher": "gilescope",
+	"icon": "icon.jpg",
+	"galleryBanner": {
+		"color": "#f0efe7",
+		"theme": "light"
+	},
+	"engines": {
+		"vscode": "^1.42.0"
+	},
+	"keywords": [
+		"rust",
+		"rustc",
+		"cargo",
+		"crate",
+		"peace"
+	],
+	"categories": [
+		"Extension Packs"
+	],
+	"repository": {
+		"url": "https://github.com/gilescope/rust-in-peace"
+	},
+	"homepage": "https://github.com/gilescope/rust-in-peace",
+	"bugs": {
+		"url": "https://github.com/gilescope/rust-in-peace/issues"
+	},
+	"extensionPack": [
+		"matklad.rust-analyzer",
+		"vadimcn.vscode-lldb",
+		"swellaby.vscode-rust-test-adapter",
+		"bungcip.better-toml",
+		"serayuzgur.crates",
+		"eamodio.gitlens",
+		"gilescope.arrowdebugging",
+		"sidp.strict-whitespace"
+	],
+	"dependencies": {
+		"vsce": "^1.73.0"
+	},
+	"__metadata": {
+		"id": "f8d6767e-de07-4a6a-b392-e309441a96ee",
+		"publisherId": "346ae2b7-6a75-4c99-af15-21bdf09d7089",
+		"publisherDisplayName": "Giles Cope"
+	}
+}

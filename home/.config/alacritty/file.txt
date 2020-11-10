@@ -1,0 +1,4 @@
+
+  primary:
+    background: '0x300a24'
+    foreground: '0xeaeaea'

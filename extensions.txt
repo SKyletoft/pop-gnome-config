@@ -1,0 +1,10 @@
+UsernameTopPanel #https://extensions.gnome.org/extension/1108/add-username-to-top-panel/
+DashToDock #https://extensions.gnome.org/extension/307/dash-to-dock/
+DisableSearch #https://github.com/SKyletoft/DisableSearch
+HideFrequentView #https://extensions.gnome.org/extension/1367/hide-frequent-view/
+SoundDeviceMenu #https://extensions.gnome.org/extension/906/sound-output-device-chooser/
+StraightTopBar #https://extensions.gnome.org/extension/1265/straight-top-bar/
+TransparentTopBar #https://extensions.gnome.org/extension/1708/transparent-top-bar/
+Unite #https://extensions.gnome.org/extension/1287/unite/
+Walkpaper #https://extensions.gnome.org/extension/1200/walkpaper/
+Workspace Scroll #https://extensions.gnome.org/extension/943/workspace-scroll/

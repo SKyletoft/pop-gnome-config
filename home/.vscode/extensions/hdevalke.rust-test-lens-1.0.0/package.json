@@ -1,0 +1,88 @@
+{
+	"name": "rust-test-lens",
+	"displayName": "Rust Test Lens",
+	"description": "Adds a code lens to quickly run or debug a single test for your Rust code.",
+	"version": "1.0.0",
+	"publisher": "hdevalke",
+	"engines": {
+		"vscode": "^1.32.0"
+	},
+	"categories": [
+		"Other",
+		"Programming Languages"
+	],
+	"icon": "images/icon.png",
+	"keywords": [
+		"Rust",
+		"debug",
+		"codelens",
+		"lldb",
+		"multi-root ready"
+	],
+	"activationEvents": [
+		"onCommand:extension.debugTest",
+		"onLanguage:rust"
+	],
+	"main": "./out/extension",
+	"license": "MIT",
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/hdevalke/rust-test-lens.git"
+	},
+	"scripts": {
+		"vscode:prepublish": "npm run compile",
+		"compile": "tsc -p ./",
+		"watch": "tsc -watch -p ./",
+		"postinstall": "node ./node_modules/vscode/bin/install",
+		"test": "npm run compile && node ./node_modules/vscode/bin/test",
+		"fmt": "npx prettier --write 'src/**/*.ts'"
+	},
+	"devDependencies": {
+		"@types/mocha": "^5.2.7",
+		"@types/node": "^13.9.1",
+		"prettier": "1.19.1",
+		"tslint": "^5.20.1",
+		"typescript": "^3.8.3",
+		"vsce": "^1.74.0",
+		"vscode": "^1.1.36"
+	},
+	"extensionDependencies": [
+		"vadimcn.vscode-lldb"
+	],
+	"contributes": {
+		"commands": [
+			{
+				"command": "extension.debugTest",
+				"title": "Debug Rust Test"
+			}
+		],
+		"configuration": {
+			"type": "object",
+			"title": "Rust Test Lens",
+			"properties": {
+				"rust-test-lens.enabled": {
+					"type": "boolean",
+					"default": true,
+					"description": "Enable or disable this extension"
+				},
+				"rust-test-lens.args.main": {
+					"type": "array",
+					"default": [],
+					"description": "Enable or disable this extension"
+				},
+				"rust-test-lens.args.tests": {
+					"type": "array",
+					"default": [
+						"--nocapture"
+					],
+					"description": "Enable or disable this extension"
+				}
+			}
+		}
+	},
+	"__metadata": {
+		"id": "5dc5b9d4-085c-4501-80ec-3ba7f2135a9f",
+		"publisherId": "925c9913-97b8-4b81-bfd5-d558b077202a",
+		"publisherDisplayName": "Hannes De Valkeneer"
+	}
+}

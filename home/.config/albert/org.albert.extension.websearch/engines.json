@@ -1,0 +1,50 @@
+[
+    {
+        "iconPath": ":duckduckgo",
+        "name": "DuckDuckGo",
+        "trigger": "dd ",
+        "url": "https://duckduckgo.com/?q=%s"
+    },
+    {
+        "iconPath": "/home/skyletoft/.config/albert/org.albert.extension.websearch/{4ec54fbd-9712-4476-a39e-79f3a3d71afd}.png",
+        "name": "Wikipedia",
+        "trigger": "wi",
+        "url": "https://en.wikipedia.org/w/index.php?cirrusUserTesting=glent_m0&search=%s&title=Special%3ASearch&go=Go&ns0=1"
+    },
+    {
+        "iconPath": ":youtube",
+        "name": "Youtube",
+        "trigger": "yt ",
+        "url": "https://www.youtube.com/results?search_query=%s"
+    },
+    {
+        "iconPath": "/home/skyletoft/.config/albert/org.albert.extension.websearch/{a4e76738-a2cf-42d7-b9cc-9275c0ebad01}.png",
+        "name": "Rust Docs",
+        "trigger": "rs",
+        "url": "https://doc.rust-lang.org/std/?search=%s"
+    },
+    {
+        "iconPath": ":wolfram",
+        "name": "Wolfram Alpha",
+        "trigger": "=",
+        "url": "https://www.wolframalpha.com/input/?i=%s"
+    },
+    {
+        "iconPath": ":github",
+        "name": "GitHub",
+        "trigger": "gh ",
+        "url": "https://github.com/search?utf8=✓&q=%s"
+    },
+    {
+        "iconPath": "/home/skyletoft/.config/albert/org.albert.extension.websearch/{294b999c-4422-4491-b57e-4a96a5c0092b}.",
+        "name": "Crates.io",
+        "trigger": "crio",
+        "url": "https://crates.io/search?q=%s"
+    },
+    {
+        "iconPath": "/home/skyletoft/.config/albert/org.albert.extension.websearch/{12816175-ede2-4679-9b86-0b5164800555}.",
+        "name": "Hoogle",
+        "trigger": "hs",
+        "url": "https://hoogle.haskell.org/?hoogle=%s"
+    }
+]

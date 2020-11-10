@@ -1,0 +1,96 @@
+{
+	"name": "haskell-linter",
+	"displayName": "haskell-linter",
+	"description": "An extension to use hlint in vscode",
+	"version": "0.0.6",
+	"publisher": "hoovercj",
+	"icon": "images/haskell.png",
+	"categories": [
+		"Languages",
+		"Linters"
+	],
+	"license": "SEE LICENSE IN LICENSE.txt",
+	"homepage": "https://github.com/hoovercj/vscode-haskell-linter",
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/hoovercj/vscode-haskell-linter.git"
+	},
+	"engines": {
+		"vscode": "^1.0.0"
+	},
+	"activationEvents": [
+		"onLanguage:haskell"
+	],
+	"main": "./out/src/extension",
+	"contributes": {
+		"languages": [
+			{
+				"id": "haskell",
+				"aliases": [
+					"Haskell",
+					"haskell"
+				],
+				"extensions": [
+					".hs",
+					".lhs"
+				]
+			}
+		],
+		"configuration": {
+			"title": "",
+			"properties": {
+				"haskell.hlint.executablePath": {
+					"type": "string",
+					"default": "hlint",
+					"description": "Points to the hlint exectuable."
+				},
+				"haskell.hlint.run": {
+					"type": "string",
+					"enum": [
+						"onSave",
+						"onType",
+						"never"
+					],
+					"default": "onType",
+					"description": "Whether the linter is run on save or on type or disabled."
+				},
+				"haskell.hlint.hints": {
+					"type": "array",
+					"default": [],
+					"description": "Which hint arguments should be used when calling hlint."
+				},
+				"haskell.hlint.ignore": {
+					"type": "array",
+					"default": [],
+					"description": "List of hints to be ignored"
+				},
+				"haskell.hlint.logLevel": {
+					"type": "string",
+					"enum": [
+						"none",
+						"log",
+						"info",
+						"warn",
+						"error"
+					],
+					"default": "error",
+					"description": "Controls the verbosity of logging. Logs can be seen in the console by opening the dev tools. `log` is the most verbose and `error` will only show critical errors"
+				}
+			}
+		}
+	},
+	"scripts": {
+		"vscode:prepublish": "node ./node_modules/vscode/bin/compile",
+		"compile": "node ./node_modules/vscode/bin/compile -watch -p ./",
+		"postinstall": "node ./node_modules/vscode/bin/install"
+	},
+	"devDependencies": {
+		"typescript": "^1.6.2",
+		"vscode": "0.11.x"
+	},
+	"__metadata": {
+		"id": "416774c3-0e14-4434-b93d-853d616ad247",
+		"publisherId": "9ce6dd66-61b2-41ff-8680-39cba0813c3d",
+		"publisherDisplayName": "Cody Hoover"
+	}
+}

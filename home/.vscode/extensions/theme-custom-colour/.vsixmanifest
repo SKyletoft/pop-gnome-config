@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <PackageManifest Version="2.0.0" xmlns="http://schemas.microsoft.com/developer/vsx-schema/2011" xmlns:d="http://schemas.microsoft.com/developer/vsx-schema-design/2011">
   <Metadata>
-    <Identity Language="en-US" Id="dark-plus-syntax" Version="0.0.167" Publisher="dunstontc"/>
-    <DisplayName>dark-plus-syntax</DisplayName>
-    <Description xml:space="preserve">VS Code&#39;s default dark theme, but just a little bit better.</Description>
+    <Identity Language="en-US" Id="theme-custom-colour" Version="0.0.1" Publisher="skyletoft"/>
+    <DisplayName>Visual Studio 2019 Dark plus syntax</DisplayName>
+    <Description xml:space="preserve">VS2019&#39;s default dark theme, but just a little bit better.</Description>
     <Tags>theme,color-theme</Tags>
     <Categories>Themes</Categories>
     <GalleryFlags>Public</GalleryFlags>

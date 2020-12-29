@@ -55,15 +55,16 @@ if [ -n "$force_color_prompt" ]; then
 	color_prompt=
 	fi
 fi
-
-if [ "$color_prompt" = yes ]; then
-	if [ "$ALACRITTY" == yes ]; then
-		PS1='\e[1;97;42;24m \u \e[21;32;44;24m\e[1;97;44;24m \h \e[21;34;41;24m\e[1;97;41m \w \001\e[21;31;49;24m\002\n\001\e[97;1m\002↳\001\e[0m\002 '
-	else
-		PS1='${debian_chroot:+($debian_chroot)}\[\033[01;32m\]\u@\h\[\033[00m\]:\[\033[01;34m\]\w\[\033[00m\]\$ '
-	fi
+if [ "$TERM" == linux ]; then
+  PS1='\[\033[01;32m\]\u \[\033[01;34m\]\w\[\033[00m\] \$ '
+elif [ "$color_prompt" = yes ]; then
+    if [ "$ALACRITTY" == yes ]; then
+      PS1='\e[1;97;42;24m \u \e[21;32;44;24m\e[1;97;44;24m \h \e[21;34;41;24m\e[1;97;41m \w \001\e[21;31;49;24m\002\n\001\e[97;1m\002↳\001\e[0m\002 '
+    else
+      PS1='${debian_chroot:+($debian_chroot)}\[\033[01;32m\]\u@\h\[\033[00m\]:\[\033[01;34m\]\w\[\033[00m\]\$ '
+    fi
 else
-	PS1='${debian_chroot:+($debian_chroot)}\u@\h:\w\$ '
+  PS1='${debian_chroot:+($debian_chroot)}\u@\h:\w\$ '
 fi
 unset color_prompt force_color_prompt
 
@@ -102,6 +103,15 @@ ex ()
   fi
 }
 
+
+mtlb() {
+  matlab -nodesktop -nojvm -nosplash -singleCompThread -batch "run $1 $2"
+}
+
+wm() {
+  wmctrl -a $1
+}
+
 alias ls="exa -a"
 alias find=fd
 alias du=dust
@@ -114,3 +124,6 @@ alias clang="clang -Wall -Wextra"
 alias g++="g++ -Wall -Wextra"
 alias clang++="clang++ -Wall -Wextra"
 alias treei="tree -C | less -Frx4"
+alias matlab="matlab -nodesktop -nosplash"
+alias pi="ssh skyletoft@192.168.0.107"
+alias python="python3"

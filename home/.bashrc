@@ -10,6 +10,7 @@ esac
 
 export PATH="$HOME/.cargo/bin:$PATH"
 export PATH="$HOME/.bin:$PATH"
+export PATH="/usr/share/digiflisp:$PATH"
 
 # don't put duplicate lines or lines starting with space in the history.
 # See bash(1) for more options
@@ -122,8 +123,10 @@ alias tree="tree -C"
 alias gcc="gcc -Wall -Wextra"
 alias clang="clang -Wall -Wextra"
 alias g++="g++ -Wall -Wextra"
-alias clang++="clang++ -Wall -Wextra"
+alias clang++="clang++ -Wall -Wextra -std=latest"
 alias treei="tree -C | less -Frx4"
+alias rtree="tree -I target"
 alias matlab="matlab -nodesktop -nosplash"
-alias pi="ssh skyletoft@192.168.0.107"
+alias pi="ssh skyletoft@77.53.237.233 -p2222"
 alias python="python3"
+alias tupdate="time update"

@@ -1,0 +1,9 @@
+[X-GNOME-Metatheme]
+Name=Pop-Custom
+Type=X-GNOME-Metatheme
+Comment=The Pop GTK Theme
+Encoding=UTF-8
+GtkTheme=Pop-Custom
+IconTheme=Yaru - Edit
+CursorTheme=Pop
+CursorSize=24

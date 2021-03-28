@@ -19,7 +19,7 @@ BinPackArguments: 'true'
 BinPackParameters: 'true'
 BreakAfterJavaFieldAnnotations: 'true'
 BreakStringLiterals: 'true'
-ColumnLimit: '78'
+ColumnLimit: '100'
 CompactNamespaces: 'false'
 Cpp11BracedListStyle: 'true'
 FixNamespaceComments: 'true'
@@ -31,6 +31,6 @@ PointerAlignment: Right
 SpaceAfterCStyleCast: 'true'
 SpaceBeforeParens: ControlStatements
 TabWidth: '4'
-UseTab: Always
+UseTab: ForIndentation
 
 ...

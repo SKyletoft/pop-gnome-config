@@ -1,6 +1,6 @@
 sudo echo "Updating..."
-sudo apt update && sudo apt upgrade && sudo apt autoremove
-flatpak update
+sudo apt update && sudo apt upgrade -y --allow-downgrades && sudo apt autoremove -y --allow-downgrades
+flatpak update -y
 rustup update
 cargo install exa rigrep fd-find bat bottom
 proton_updater.sh

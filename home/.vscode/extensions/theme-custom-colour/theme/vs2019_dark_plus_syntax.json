@@ -21,7 +21,27 @@
         "statusBarItem.remoteForeground": "#FFF",
         "statusBarItem.remoteBackground": "#16825D",
         "sideBarSectionHeader.background": "#0000",
-        "sideBarSectionHeader.border": "#ccc3"
+        "sideBarSectionHeader.border": "#ccc3",
+        "terminal.selectionBackground": "#add6ff26",
+        "terminalCursor.foreground": "#808080",
+        "terminal.background": "#1e1e1e",
+        "terminal.foreground": "#d4d4d4",
+        "terminal.ansiBlack": "#1e1e1e",
+        "terminal.ansiBrightBlack": "#808080",
+        "terminal.ansiRed": "#d16969",
+        "terminal.ansiBrightRed": "#d16969",
+        "terminal.ansiBlue": "#569cd6",
+        "terminal.ansiBrightBlue": "#9cdcfe",
+        "terminal.ansiGreen": "#608b4e",
+        "terminal.ansiBrightGreen": "#b5cea8",
+        "terminal.ansiCyan": "#4ec9b0",
+        "terminal.ansiBrightCyan": "#4ec9b0",
+        "terminal.ansiYellow": "#d7ba7d",
+        "terminal.ansiBrightYellow": "#ce9178",
+        "terminal.ansiMagenta": "#c586c0",
+        "terminal.ansiBrightMagenta": "#c586c0",
+        "terminal.ansiWhite": "#d4d4d4",
+        "terminal.ansiBrightWhite": "#808080"
     },
     "semanticHighlighting": true,
     // https://github.com/microsoft/vscode/blob/master/extensions/theme-defaults/themes/dark_vs.json
@@ -444,7 +464,10 @@
                 "storage.type.generic.groovy",
                 "storage.type.object.array.groovy",
                 "storage.type.primitive.array.groovy",
-                "storage.type.primitive.groovy"
+                "storage.type.primitive.groovy",
+                "variable.other.enummember",
+                "entity.name.type.option.rust",
+                "entity.name.type.result.rust"
             ],
             "settings": {
                 "foreground": "#4EC9B0"
@@ -489,16 +512,6 @@
             ],
             "settings": {
                 "foreground": "#9CDCFE"
-            }
-        },
-        {
-            "name": "Constants and enums",
-            "scope": [
-                "variable.other.constant",
-                "variable.other.enummember"
-            ],
-            "settings": {
-                "foreground": "#51B6C4",
             }
         },
         {
@@ -644,13 +657,6 @@
             "scope": "variable.other.constant",
             "settings": {
                 "foreground": "#D4D4D4",
-            }
-        },
-        {
-            "name": "Enum Member",
-            "scope": "variable.other.enummember",
-            "settings": {
-                "foreground": "#D4D4D4"
             }
         },
         {
